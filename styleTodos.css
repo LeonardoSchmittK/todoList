@@ -1,0 +1,421 @@
+:root{
+    --primaryColor:rgb(255, 255, 255);
+    --secondaryColor:#00FA9A;
+}
+@font-face{
+    font-family:'Kimberley';
+    src: url('../fonts/kimberley.ttf');
+
+}
+/* This is a compiled file, you should be editing the file in the templates directory */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+  
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+  
+  .pace-inactive {
+    display: none;
+  }
+  
+  .pace .pace-progress {
+    background:rgb(38, 235, 162);
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 10px;
+  }
+  
+
+  
+  
+  
+body{
+    background-color:var(--primaryColor);
+    color:black;
+    font-size: 20px;
+    overflow-x: hidden;
+}
+div#app{
+    background-color:white;
+    box-shadow: 1px 2px 41px rgba(70, 70, 70, 0.411);
+    width:530px;
+    height:680px;
+   margin: auto; 
+   margin-top:210px;
+   border-radius: 12px;
+   animation: neonList 5s forwards ease  infinite alternate;
+   --neon: rgba(88, 88, 88, 0.274);
+   
+   border-bottom: 2px solid rgb(38, 235, 162);
+} 
+
+input{
+    border-top :none ;
+    border-left:none;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius: 3px;
+    outline-color: rgb(131, 131, 131);
+    border-radius: 4px;
+    padding:2px;
+    margin-left:10px;
+    height:60px;
+    font-size:30px;
+    width:240px;
+    color:grey;
+}
+#nome{
+    color:white;
+    outline: none;
+    font-size:60px;
+    position: absolute;
+    left:1091px;
+    top:110px;
+    font-family: 'Kimberley';
+    border-right:none;
+    border-bottom:none;
+    border-radius: 0px;
+    width:1071px;
+    height:80px;
+    letter-spacing: 1.56px;
+    background-color: rgb(38, 235, 162);
+    filter: drop-shadow(0 0 30px rgba(38, 235, 163, 0.472) );
+}
+#sejaBemVindo{
+    
+    color:grey;
+    position:absolute;
+    width:500px;
+    top:-690px;
+    left:21px;
+    font-size: 50px;
+}
+#sejaBemVindo:hover{
+    color:black;
+    transition:0.6s;
+}
+button{
+    background-color: white;
+    border-right: 1px solid grey;
+    border-bottom: 1px solid grey;
+    border-radius:3px;
+    outline-color: grey;
+    height:61px;
+    font-size:30px;
+    color:grey;
+}
+button:hover{
+    border-bottom-color:rgb(38, 235, 162) ;
+    border-right-color: rgb(38, 235, 162);
+}
+input:hover{
+    border-bottom-color:rgb(38, 235, 162) ;
+    border-right-color: rgb(38, 235, 162);
+}
+
+div#bottomTools{
+    position: fixed;
+    top:600px;
+} 
+a {
+   margin:10px;
+     font-family: 'Fira Sans', sans-serif;
+    font-family: 'Russo One', sans-serif;
+    font-size:19px;
+    color:rgb(51, 206, 146);
+    text-decoration:none;
+    transition:.592s ease;
+}
+
+a:hover{
+    color:rgb(93, 173, 143);
+    transition:.592s ease;
+}
+
+li{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size:30px;
+    line-break: auto;
+    transition:0.2s ease;
+    padding:1px;
+    color:grey;
+    margin-top:1px;
+    letter-spacing: .7px;
+    
+}
+li::after{
+    content:'';
+    background-color:rgba(51, 206, 147, 0.205);
+    width:30px;
+    height:02px;
+    transition:1s ease;
+    display: block;
+    margin-left:0px;
+}
+li:hover::after{
+    width:210px;
+    
+}
+
+li:hover{
+    color:black;
+    font-weight: 200 ;
+    transition:0.2s ease;
+}
+
+#hora{
+    font-size: 30px;
+   position:absolute;
+   left:1210px;
+   top:803px;
+   color:grey;
+}
+#hora:hover{
+    color:rgb(51, 206, 146);
+}
+#dia{
+    font-size: 20px;
+    position:absolute;
+    left:1210px;
+    top:831px;
+    color:grey;
+}
+#dia:hover{
+    letter-spacing: 1px;
+    transition: .1s ease;
+}
+@keyframes  neonList{
+    from {
+    filter:drop-shadow(0 0 0 var(--neon));
+}
+to {
+    filter:drop-shadow(0 0 06px var(--neon));
+}
+}
+    #excluir {
+        position: absolute;
+        top:220px;
+        left:1300px;
+        color:grey;
+        transition:.4s ease;
+        cursor: pointer;
+    }
+    #excluir:hover{
+        transform: scale(1.4) ;
+        color:rgb(51, 206, 146);
+        transition:.4s ease;
+    }
+    #reload{
+        position:absolute;
+        top:220px;
+        left:1262px;
+        color:grey;
+        transition:.4s ease;
+        cursor: pointer;
+    }
+    #reload:hover{
+        transform: scale(1.4) rotate(360deg);
+        color:rgb(51, 206, 146);
+        transition:.4s ease;
+    }
+    svg#f8de8b25-3d53-474b-a5b1-b2a4ad6ddbb8{
+        position:absolute;
+        top:327px;
+        transition:1s ease ;
+        left:-110px;
+    }
+    svg#f8de8b25-3d53-474b-a5b1-b2a4ad6ddbb8:hover{
+        filter: grayscale(40%);
+    }
+    svg#circleSVG{
+        position: absolute;
+        top:129px;
+        animation: circleSVG 4s ease alternate infinite;
+
+    }
+    svg#circleSVG2{
+        position: absolute;
+        top:622px;
+        animation: circleSVG2 4s ease alternate infinite;
+        z-index: -1;
+    }
+    /*@keyframes circleSVG{
+        from{
+            top:900px;
+        }to{
+            top:200px;
+        }
+    }
+    @keyframes circleSVG2{
+        from{
+            left:820px;
+        }to{
+            left:220px;
+        }
+    }*/
+    #fraseDoDia{
+        font-size:40px;;
+        position:absolute;
+        left:1500px;
+        top:420px;
+        transition:1s ease all;
+        color:grey;
+        /*text-align: justify*/;
+        width:470px;
+        text-shadow: 3px 1px 1px rgb(219, 219, 219);
+    }
+    #fraseDoDia:hover{
+        color:rgb(51, 206, 146);
+        transition:0.7s ease all;
+        color:black;
+    }
+    #fraseDoDiaTitulo{
+        filter: drop-shadow(0 0 30px rgba(38, 235, 163, 0.657) );
+        position: absolute;
+        left:1640px;
+        top:350px;
+        color:white;
+        font-family: 'kimberley';
+        transition:1s;
+        letter-spacing: 1px;
+        background-color:rgba(51, 206, 147, 0.836) ;
+        width:800px;
+       
+    }
+    #fraseDoDiaTitulo:hover{
+         text-shadow: 1px 1px 1px green;
+       
+    }
+    ::-webkit-scrollbar{
+        width: 15px;
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: linear-gradient(rgb(255, 255, 255),rgb(51, 206, 146));
+        filter: drop-shadow(0px 0px 30px rgb(51, 206, 146) );
+    }
+    ::-webkit-scrollbar-track{
+        background:white;
+        
+    }
+    #redes{
+        position:absolute;
+        
+        top:1290px;
+        letter-spacing: 4px;
+    left:690px;
+        
+    }
+    #redes a{
+        font-size:90px;
+          color:rgb(255, 255, 255);
+          transition:.3s ease;
+          z-index: 1;
+    }
+   #redes i{
+    transition:.3s ease;
+    z-index: 999;
+   }
+    #redes i:hover{
+         transform: scale(1.4) rotate(12deg) ;
+         transition:.3s ease;
+         color: rgb(255, 255, 255);
+         filter: drop-shadow(0px 0px 03px white);
+    }
+    #wave{
+        position: absolute;
+        width:2830px;
+        z-index: -100;
+        top:810px;
+        height: 700px;
+        left:00px;
+        background-color: rgba(38, 235, 163, 0.041);
+        filter: drop-shadow(0px 0px 30px rgb(38,235,162));
+    }
+    #wavefinish{
+        position:absolute;
+        top:1390px;
+        width:2860px;
+        height: 144px;
+        background-color: rgb(38, 235, 162);
+    }
+    @media (max-width:576px){
+        svg#f8de8b25-3d53-474b-a5b1-b2a4ad6ddbb8{
+            width:500px;
+            height:400px;
+            top:880px;
+            left:21px;
+        }
+        svg#circleSVG{
+            opacity: 0;
+        }
+        svg#circleSVG2{
+            opacity: 0;
+        }
+        button{
+            font-size:20px;
+        }
+        input{
+            font-size: 20px;
+            width:150px;
+        }
+        #hora{
+            left:354px;
+            top:779px;
+            font-size: 26px;
+        }
+        #dia{
+            left:352px;
+            top:801px;
+        }
+        div#app{
+            width:370px;
+        }
+        #excluir{
+            left:410px;
+        }
+    }
+    @media (max-width:1024px){
+        svg#f8de8b25-3d53-474b-a5b1-b2a4ad6ddbb8{
+            width:500px;
+            height:400px;
+            top:880px;
+            left:341px;
+        }
+        svg#circleSVG{
+            opacity: 0;
+        }
+        svg#circleSVG2{
+            opacity: 0;
+        }
+        button{
+            font-size:30px;
+        }
+        input{
+            font-size: 30px;
+            width:280px;
+        }
+        #hora{
+            left:669px;
+            top:779px;
+            font-size: 30px;
+        }
+        #dia{
+            left:678px;
+            top:806px;
+        }
+        div#app{
+            width:570px;
+
+        }
+        #excluir{
+            left:754px;
+        }
+    } 
+    
